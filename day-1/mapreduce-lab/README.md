@@ -143,71 +143,74 @@ Found 2 items
 
 ```
 hadoop jar wordcount.jar org.apache.hadoop.examples.WordCount /data/test1/ /data/test1_output
-20/09/30 10:18:49 INFO client.RMProxy: Connecting to ResourceManager at ip-10-0-1-185.eu-west-1.compute.internal/10.0.1.185:8032
-20/09/30 10:18:50 INFO input.FileInputFormat: Total input files to process : 2
-20/09/30 10:18:50 INFO lzo.GPLNativeCodeLoader: Loaded native gpl library
-20/09/30 10:18:50 INFO lzo.LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev a3b61461af0d6b4d981c915b0a1f342464987aaa]
-20/09/30 10:18:50 INFO mapreduce.JobSubmitter: number of splits:4
-20/09/30 10:18:50 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1601459561127_0001
-20/09/30 10:18:50 INFO impl.YarnClientImpl: Submitted application application_1601459561127_0001
-20/09/30 10:18:50 INFO mapreduce.Job: The url to track the job: http://ip-10-0-1-185.eu-west-1.compute.internal:20888/proxy/application_1601459561127_0001/
-20/09/30 10:18:50 INFO mapreduce.Job: Running job: job_1601459561127_0001
-20/09/30 10:18:56 INFO mapreduce.Job: Job job_1601459561127_0001 running in uber mode : false
-20/09/30 10:18:56 INFO mapreduce.Job:  map 0% reduce 0%
-20/09/30 10:19:11 INFO mapreduce.Job:  map 50% reduce 0%
-20/09/30 10:19:14 INFO mapreduce.Job:  map 63% reduce 0%
-20/09/30 10:19:15 INFO mapreduce.Job:  map 77% reduce 0%
-20/09/30 10:19:18 INFO mapreduce.Job:  map 88% reduce 0%
-20/09/30 10:19:20 INFO mapreduce.Job:  map 100% reduce 33%
-20/09/30 10:19:21 INFO mapreduce.Job:  map 100% reduce 100%
-20/09/30 10:19:21 INFO mapreduce.Job: Job job_1601459561127_0001 completed successfully
-20/09/30 10:19:21 INFO mapreduce.Job: Counters: 51
+20/09/30 16:26:42 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-37-125.eu-west-1.compute.internal/172.31.37.125:8032
+20/09/30 16:26:42 INFO input.FileInputFormat: Total input files to process : 2
+20/09/30 16:26:42 INFO lzo.GPLNativeCodeLoader: Loaded native gpl library
+20/09/30 16:26:42 INFO lzo.LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev ff8f5709577defb6b78cdc1f98cfe129c4b6fe46]
+20/09/30 16:26:43 INFO mapreduce.JobSubmitter: number of splits:4
+20/09/30 16:26:43 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1601482628039_0001
+20/09/30 16:26:44 INFO impl.YarnClientImpl: Submitted application application_1601482628039_0001
+20/09/30 16:26:44 INFO mapreduce.Job: The url to track the job: http://ip-172-31-37-125.eu-west-1.compute.internal:20888/proxy/application_1601482628039_0001/
+20/09/30 16:26:44 INFO mapreduce.Job: Running job: job_1601482628039_0001
+20/09/30 16:26:50 INFO mapreduce.Job: Job job_1601482628039_0001 running in uber mode : false
+20/09/30 16:26:50 INFO mapreduce.Job:  map 0% reduce 0%
+20/09/30 16:27:04 INFO mapreduce.Job:  map 25% reduce 0%
+20/09/30 16:27:05 INFO mapreduce.Job:  map 50% reduce 0%
+20/09/30 16:27:07 INFO mapreduce.Job:  map 64% reduce 0%
+20/09/30 16:27:08 INFO mapreduce.Job:  map 77% reduce 0%
+20/09/30 16:27:11 INFO mapreduce.Job:  map 88% reduce 0%
+20/09/30 16:27:12 INFO mapreduce.Job:  map 100% reduce 20%
+20/09/30 16:27:13 INFO mapreduce.Job:  map 100% reduce 40%
+20/09/30 16:27:14 INFO mapreduce.Job:  map 100% reduce 80%
+20/09/30 16:27:15 INFO mapreduce.Job:  map 100% reduce 100%
+20/09/30 16:27:15 INFO mapreduce.Job: Job job_1601482628039_0001 completed successfully
+20/09/30 16:27:15 INFO mapreduce.Job: Counters: 51
 	File System Counters
-		FILE: Number of bytes read=1998
-		FILE: Number of bytes written=1190120
+		FILE: Number of bytes read=4189
+		FILE: Number of bytes written=1536514
 		FILE: Number of read operations=0
 		FILE: Number of large read operations=0
 		FILE: Number of write operations=0
-		HDFS: Number of bytes read=402784808
+		HDFS: Number of bytes read=402784820
 		HDFS: Number of bytes written=30
-		HDFS: Number of read operations=21
+		HDFS: Number of read operations=27
 		HDFS: Number of large read operations=0
-		HDFS: Number of write operations=6
+		HDFS: Number of write operations=10
 	Job Counters 
 		Killed map tasks=1
-		Launched map tasks=5
-		Launched reduce tasks=3
+		Launched map tasks=4
+		Launched reduce tasks=5
 		Data-local map tasks=3
-		Rack-local map tasks=2
-		Total time spent by all maps in occupied slots (ms)=6349632
-		Total time spent by all reduces in occupied slots (ms)=4131456
-		Total time spent by all map tasks (ms)=66142
-		Total time spent by all reduce tasks (ms)=21518
-		Total vcore-milliseconds taken by all map tasks=66142
-		Total vcore-milliseconds taken by all reduce tasks=21518
-		Total megabyte-milliseconds taken by all map tasks=203188224
-		Total megabyte-milliseconds taken by all reduce tasks=132206592
+		Rack-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=6124608
+		Total time spent by all reduces in occupied slots (ms)=4258368
+		Total time spent by all map tasks (ms)=63798
+		Total time spent by all reduce tasks (ms)=22179
+		Total vcore-milliseconds taken by all map tasks=63798
+		Total vcore-milliseconds taken by all reduce tasks=22179
+		Total megabyte-milliseconds taken by all map tasks=195987456
+		Total megabyte-milliseconds taken by all reduce tasks=136267776
 	Map-Reduce Framework
 		Map input records=33554432
 		Map output records=67108864
 		Map output bytes=671088640
-		Map output materialized bytes=336
-		Input split bytes=552
+		Map output materialized bytes=452
+		Input split bytes=564
 		Combine input records=67108880
 		Combine output records=28
 		Reduce input groups=2
-		Reduce shuffle bytes=336
+		Reduce shuffle bytes=452
 		Reduce input records=12
 		Reduce output records=2
 		Spilled Records=48
-		Shuffled Maps =12
+		Shuffled Maps =20
 		Failed Shuffles=0
-		Merged Map outputs=12
-		GC time elapsed (ms)=1028
-		CPU time spent (ms)=68620
-		Physical memory (bytes) snapshot=4612747264
-		Virtual memory (bytes) snapshot=40272920576
-		Total committed heap usage (bytes)=4566024192
+		Merged Map outputs=20
+		GC time elapsed (ms)=993
+		CPU time spent (ms)=71420
+		Physical memory (bytes) snapshot=5870960640
+		Virtual memory (bytes) snapshot=55088074752
+		Total committed heap usage (bytes)=5688000512
 	Shuffle Errors
 		BAD_ID=0
 		CONNECTION=0
@@ -234,19 +237,17 @@ hadoop jar wordcount.jar org.apache.hadoop.examples.WordCount /data/test1/ /data
 
 ```
 hdfs dfs -ls /data/test1_output
-Found 4 items
--rw-r--r--   1 hadoop hadoop          0 2020-09-30 10:19 /data/test1_output/_SUCCESS
--rw-r--r--   1 hadoop hadoop          0 2020-09-30 10:19 /data/test1_output/part-r-00000
--rw-r--r--   1 hadoop hadoop         15 2020-09-30 10:19 /data/test1_output/part-r-00001
--rw-r--r--   1 hadoop hadoop         15 2020-09-30 10:19 /data/test1_output/part-r-00002
+Found 6 items
+-rw-r--r--   1 hadoop hadoop          0 2020-09-30 16:27 /data/test1_output/_SUCCESS
+-rw-r--r--   1 hadoop hadoop          0 2020-09-30 16:27 /data/test1_output/part-r-00000
+-rw-r--r--   1 hadoop hadoop          0 2020-09-30 16:27 /data/test1_output/part-r-00001
+-rw-r--r--   1 hadoop hadoop          0 2020-09-30 16:27 /data/test1_output/part-r-00002
+-rw-r--r--   1 hadoop hadoop         30 2020-09-30 16:27 /data/test1_output/part-r-00003
+-rw-r--r--   1 hadoop hadoop          0 2020-09-30 16:27 /data/test1_output/part-r-00004
 ```
 
 ```
-hdfs dfs -cat /data/test1_output/part-r-00001
-world 33554432
-```
-
-```
-hdfs dfs -cat /data/test1_output/part-r-00002
-hello 33554432
+hdfs dfs -cat /data/test1_output/part-r-00003
+hello	33554432
+world	33554432
 ```
