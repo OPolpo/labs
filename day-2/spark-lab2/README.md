@@ -30,7 +30,7 @@
 
     ```
     camera_df.rdd.getNumPartitions()
-    camera_df=camera_df.coalesce(1)
+    camera_df = camera_df.coalesce(1)
     camera_df.rdd.getNumPartitions()
     ```
 
