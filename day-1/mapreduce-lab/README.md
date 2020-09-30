@@ -223,12 +223,12 @@ hadoop jar wordcount.jar org.apache.hadoop.examples.WordCount /data/test1/ /data
 
 * Understand the counters:
 
-- Launched map tasks=5 & Killed map tasks=1 : because of Speculative execution. At the end only 4 Mappers participated on the processing
-- Launched reduce tasks=3 : this is the default setup for this cluster configuration
-- Map input records=33554432: Overall number of file records
-- Map output records=67108864: for each record record 2 (key,value) pairs are generated
-- Reduce input groups=2 : number of reduce functions execution (= number of unique keys)
-- Reduce output records=2 : the outout is only 2 records, one for "hello" and one for "world"
+- **Launched map tasks=5** & **Killed map tasks=1** : because of Speculative execution. At the end only 4 Mappers participated on the processing
+- **Launched reduce tasks=3** : this is the default setup for this cluster configuration
+- **Map input records=33554432** : Overall number of file records
+- **Map output records=67108864** : for each record record 2 (key,value) pairs are generated
+- **Reduce input groups=2** : number of reduce functions execution (= number of unique keys)
+- **Reduce output records=2** : the outout is only 2 records, one for "hello" and one for "world"
 
 * Inspect the output:
 
