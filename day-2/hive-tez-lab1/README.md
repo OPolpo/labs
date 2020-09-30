@@ -17,7 +17,7 @@ Compare the Hive runtimes of MapReduce vs. Tez
 ![login](resources/login.png)
 
 4. Run the `Hive_CloudFront.q` script using MapReduce with the following command, where region is the region in which your cluster is located:
-  > <pre>hive -f s3://eu-central-1.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q \<br />-d INPUT=s3://eu-central-1.elasticmapreduce.samples \<br />-d OUTPUT=s3://<code style="color:red;"/>umesh-hive</code>/mr-test/ <i>-hiveconf hive.execution.engine=mr</i></pre>
+  > <pre>hive -f s3://eu-west-1.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q \<br />-d INPUT=s3://eu-west-1.elasticmapreduce.samples \<br />-d OUTPUT=s3://<code style="color:red;"/>umesh-hive</code>/mr-test/ <i>-hiveconf hive.execution.engine=mr</i></pre>
   > <small> * change the highlighted to your name and append "-hive" e.g. umesh-hive</small>
 
   > The output should look something like the following:  
@@ -25,7 +25,7 @@ Compare the Hive runtimes of MapReduce vs. Tez
 <small>* Take note of the time taken to run the query 43.705 seconds when using the deprecated MapReduce engine </small>
 
 5. Now run the job with the Tez execution engine using the following command:
-  > <pre>hive -f s3://eu-central-1.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q \<br />-d INPUT=s3://eu-central-1.elasticmapreduce.samples \<br />-d OUTPUT=s3://<code style="color:red;"/>umesh-hive</code>/tez-test/ <i>-hiveconf hive.execution.engine=tez</i></pre>
+  > <pre>hive -f s3://eu-west-1.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q \<br />-d INPUT=s3://eu-west-1.elasticmapreduce.samples \<br />-d OUTPUT=s3://<code style="color:red;"/>umesh-hive</code>/tez-test/ <i>-hiveconf hive.execution.engine=tez</i></pre>
   > <small> * change the highlighted to your name and append "-hive" e.g. umesh-hive</small>
 
   > The output should look something like the following:
@@ -35,7 +35,7 @@ Compare the Hive runtimes of MapReduce vs. Tez
 # [Tez Web UI](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/tez-web-ui.html)
 
 Tez has its own web user interface. To view the web UI, see:
-  > <code>http://<code style="color:red;">masterDNS</code>:8080/tez-ui</code><br /><small> * change the highlighted to the master DNS name of your EMR cluster which you get from the <a href="https://eu-central-1.console.aws.amazon.com/elasticmapreduce/home?region=eu-central-1#cluster-list:">EMR Console</a>
+  > <code>http://<code style="color:red;">masterDNS</code>:8080/tez-ui</code><br /><small> * change the highlighted to the master DNS name of your EMR cluster which you get from the <a href="https://eu-west-1.console.aws.amazon.com/elasticmapreduce/home?region=eu-west-1#cluster-list:">EMR Console</a>
   > <img src="resources/emr-clusterDNS.png" width="600px"> </img>
 
 * Here's an output to see all Tez queries
