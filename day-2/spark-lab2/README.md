@@ -56,19 +56,7 @@
       joinedDF.count()
       ```
 
-11. Executor OOM
-      ```
-      cross_joinedDF = camera_df.crossJoin(pc_df)
-      cross_joinedDF.explain()
-      cross_joinedDF.count()
-      ```
-
-12. Driver OOM error
-      ```
-      camera_df.collect()
-      ```
-
-13. Spark UI
+11. Spark UI
 
   * View all applications
     ![applications](resources/sparkui/applications.png)
