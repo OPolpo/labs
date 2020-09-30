@@ -26,7 +26,7 @@
     apparel_df = apparel_df.coalesce(1)
     apparel_df.rdd.getNumPartitions()
     ```
-    ![partition1](resources/partition1.png)
+    ![partition1](resources/coalesce_spark.png)
 
     ```
     camera_df.rdd.getNumPartitions()
