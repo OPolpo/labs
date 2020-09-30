@@ -12,16 +12,16 @@
 
 3. Check if you have an access to s3 locations using below commands
     ```
-    aws s3 ls s3://eu-central-1.elasticmapreduce.samples/cloudfront/data/
-    aws s3 ls s3://eu-central-1.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q
+    aws s3 ls s3://eu-west-1.elasticmapreduce.samples/cloudfront/data/
+    aws s3 ls s3://eu-west-1.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q
     ```
 
     ![ls](resources/3.png)
 
 4. Download the `Hive_CloudFront.q` and `log1` files on emr master node and check if they are downloaded using below commands:
     ```
-    aws s3 cp s3://eu-central-1.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q .
-    aws s3 cp s3://eu-central-1.elasticmapreduce.samples/cloudfront/data/log1 .
+    aws s3 cp s3://eu-west-1.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q .
+    aws s3 cp s3://eu-west-1.elasticmapreduce.samples/cloudfront/data/log1 .
     ls -l /home/hadoop/
     ```
 
