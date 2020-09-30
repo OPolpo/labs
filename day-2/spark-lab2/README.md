@@ -23,7 +23,7 @@
 6. Check the number of partition
     ```
     apparel_df.rdd.getNumPartitions()
-    apparel_df=camera_df.coalesce(1)
+    apparel_df = apparel_df.coalesce(1)
     apparel_df.rdd.getNumPartitions()
     ```
     ![partition1](resources/partition1.png)
